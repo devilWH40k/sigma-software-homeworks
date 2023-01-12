@@ -201,6 +201,47 @@ body {
   background-image: url("../assets/card3-bg.png");
 }
 
+/* Community section */
+
+.community {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: #245852;
+  padding: 229px 190px 176px;
+}
+
+.community__text {
+  display: block;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.community__headline {
+  max-width: 580px;
+}
+
+.community__headline .btn {
+  margin-top: 57px;
+}
+
+/* video */
+
+.video {
+  position: relative;
+}
+
+.video__prescreen {
+  filter: brightness(80%);
+}
+
+.video__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* Text */
 
 .text--normal {
