@@ -10,3 +10,7 @@ html {
 .solutions__text-heading::before {
   font-family: "Lato";
 }
+
+.footer__platforms .info {
+  font-family: "Poppins";
+}
