@@ -1,0 +1,16 @@
+.nav {
+  &__item-list {
+    @include reset-list;
+    @include flex-with-gap(60px);
+  }
+
+  &__item {
+    cursor: pointer;
+    transition: transform 0.4s;
+
+    &:hover {
+      transform: scale(1.05);
+      color: $orange;
+    }
+  }
+}

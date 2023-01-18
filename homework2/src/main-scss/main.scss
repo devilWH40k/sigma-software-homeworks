@@ -1,0 +1,19 @@
+@import "./normalize";
+@import "./base";
+@import "./mixins";
+@import "./text";
+@import "../common.blocks/header/header";
+@import "../common.blocks/nav/nav";
+@import "../common.blocks/hero-banner/hero-banner";
+
+html {
+  font-family: $font-common;
+}
+
+body {
+  color: $grey;
+}
+
+button {
+  cursor: pointer;
+}

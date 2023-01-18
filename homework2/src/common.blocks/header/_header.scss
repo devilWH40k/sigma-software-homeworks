@@ -1,0 +1,79 @@
+.header {
+  position: relative;
+  padding: 50px 10% 117px;
+  font-family: $font-header;
+  font-size: $font-size-big;
+  background: url("../assets/decorations/traveller.png"),
+    url("../assets/decorations/top-right-figure.svg"),
+    url("../assets/decorations/ellipse-left.svg");
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: 85% 110px, top right, top left;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $grey;
+  }
+
+  &__btn-section {
+    @include flex-with-gap(50px);
+  }
+
+  &__btn {
+    background: transparent;
+    outline: none;
+    border: none;
+
+    &:nth-child(3) img {
+      margin-bottom: 2px;
+    }
+  }
+
+  &__btn--bordered {
+    border: 1px solid black;
+    padding: 9px 22px;
+    border-radius: 5px;
+  }
+
+  &__plane {
+    position: absolute;
+    transition: all 3s;
+
+    &--1 {
+      top: 19%;
+      left: 49%;
+      animation: plane-out-1 3s ease-in 0.2s forwards paused;
+    }
+
+    &--2 {
+      top: 52%;
+      left: 84%;
+      animation: plane-out-2 3s ease-in 0.2s forwards paused;
+    }
+
+    &:hover {
+      animation-play-state: running;
+    }
+  }
+}
+
+@keyframes plane-out-1 {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(250%, -250%);
+  }
+}
+
+@keyframes plane-out-2 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  to {
+    transform: translate(20%, -650%) rotate(-45deg);
+  }
+}
