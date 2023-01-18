@@ -1,0 +1,27 @@
+.section {
+  padding: 0 7%;
+
+  &__preheading {
+    color: $light-grey;
+    font-size: $font-size-preheading-deafult;
+    line-height: 27px;
+  }
+
+  &__heading {
+    color: $darksih-blue;
+    font-size: $font-size-heading-normal;
+    line-height: 64px;
+  }
+
+  &--services {
+    margin-top: 100px;
+    text-align: center;
+    min-height: 500px; // testing
+    background: url("../assets/decorations/services-top-right-decor.svg")
+      no-repeat 95% 0%;
+
+    &__heading {
+      margin-top: 8px;
+    }
+  }
+}
