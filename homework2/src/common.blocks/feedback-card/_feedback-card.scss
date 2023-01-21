@@ -1,0 +1,31 @@
+.feedback-card {
+  position: relative;
+  width: 504px;
+  height: 245px;
+  padding: 28px 68px 34px 34px;
+  color: $light-grey;
+  font-weight: 500;
+  background-color: $white;
+  box-shadow: $card-shadow;
+
+  &__info {
+    margin-top: 34px;
+  }
+
+  &__text {
+    line-height: 32px;
+  }
+
+  &__author {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+
+  &__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+}
