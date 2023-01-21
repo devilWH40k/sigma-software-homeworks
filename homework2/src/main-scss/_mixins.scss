@@ -17,3 +17,8 @@
   display: flex;
   gap: $gap;
 }
+
+@mixin grid-centering {
+  display: grid;
+  place-items: center;
+}

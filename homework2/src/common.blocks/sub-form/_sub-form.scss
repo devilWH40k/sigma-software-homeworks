@@ -1,0 +1,72 @@
+.sub-form {
+  position: relative;
+  width: 95%;
+  background-color: $light-purple;
+  background-image: url("../assets/decorations/subscribe-bottom-left.svg"),
+    url("../assets/decorations/subscribe-top-right.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
+  border-radius: 120px 20px 20px;
+  margin: 0 auto;
+  padding: 80px 156px;
+  text-align: center;
+
+  //test
+  min-height: 400px;
+
+  &__heading {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 54px;
+    color: $light-grey;
+  }
+
+  &__email-box {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+
+    img {
+      position: absolute;
+      top: 23px;
+      left: 30px;
+    }
+  }
+
+  &__email {
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 25px 66px;
+    font-size: small;
+    background-color: $white;
+    border-radius: 10px;
+
+    &:active,
+    &:focus {
+      outline: 1px solid $grey;
+    }
+  }
+
+  &__btn {
+    @include reset-button;
+    padding: 22px 50px;
+    font-size: 17px;
+    border-radius: 10px;
+    color: $white;
+    background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+  }
+
+  .wrapper {
+    @include flex-with-gap(24px);
+    justify-content: center;
+    margin-top: 74px;
+  }
+
+  &__send-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(20px, -13px);
+  }
+}

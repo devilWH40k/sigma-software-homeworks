@@ -55,11 +55,46 @@
     justify-content: center;
     margin-top: 209px;
     padding-right: 11%;
-    //test
-    min-height: 900px;
 
     .section__heading {
       max-width: 410px;
     }
+  }
+
+  &--partners {
+    @include flex-with-gap(30px);
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 140px;
+
+    .partner-logo {
+      @include grid-centering;
+      padding: 0 45px;
+      height: 80px;
+      border-radius: 10px;
+      background-color: $white;
+      transition: box-shadow 0.6s;
+    }
+
+    .partner-logo:hover {
+      box-shadow: $card-shadow;
+    }
+
+    .partner-logo > img {
+      filter: grayscale(1);
+      transition: filter 0.6s;
+    }
+
+    .partner-logo:hover > img {
+      filter: grayscale(0);
+    }
+  }
+
+  &--subscribe {
+    margin-top: 200px;
+    padding-bottom: 80px;
+    background-image: url("../assets/decorations/subscribe-bottom-right.svg");
+    background-repeat: no-repeat;
+    background-position: 98% 100%;
   }
 }
