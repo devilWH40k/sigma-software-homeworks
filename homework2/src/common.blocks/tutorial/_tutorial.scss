@@ -1,0 +1,26 @@
+.tutorial {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  margin-top: 31px;
+  color: $light-grey;
+
+  &__item {
+    @include flex-with-gap(21px);
+  }
+
+  &__img {
+    width: 47px;
+    height: 48px;
+  }
+
+  &__heading {
+    font-size: $font-size-normall;
+  }
+
+  &__text {
+    display: inline-block;
+    max-width: 327px;
+    margin-top: 5px;
+  }
+}

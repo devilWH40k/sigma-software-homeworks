@@ -9,6 +9,7 @@
 
   &__heading {
     color: $darksih-blue;
+    font-family: $font-headings;
     font-size: $font-size-heading-normal;
     line-height: 64px;
   }
@@ -16,12 +17,38 @@
   &--services {
     margin-top: 100px;
     text-align: center;
-    min-height: 500px; // testing
     background: url("../assets/decorations/services-top-right-decor.svg")
       no-repeat 95% 0%;
 
-    &__heading {
+    .section__heading {
       margin-top: 8px;
+    }
+  }
+
+  &--destinations {
+    margin-top: 156px;
+    padding-left: 9%;
+    padding-right: 14%;
+    text-align: center;
+
+    .section__heading {
+      margin-top: 8px;
+    }
+  }
+
+  &--bookings {
+    @include flex-with-gap(118px);
+    justify-content: center;
+    margin-top: 186px;
+    padding-left: 11%;
+    padding-right: 18%;
+    // test-only
+    min-height: 900px;
+
+    .section__heading {
+      margin-top: 15px;
+      max-width: 511px;
+      text-transform: capitalize;
     }
   }
 }

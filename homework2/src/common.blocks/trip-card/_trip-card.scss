@@ -1,0 +1,107 @@
+.trip-card {
+  position: relative;
+  width: 370px;
+  height: 400px;
+  margin-top: 60px;
+  padding: 20px 25px 30px;
+  border-radius: 26px;
+  color: $light-grey;
+  background-color: $white;
+  font-weight: 500;
+  box-shadow: $trip-card-shadow;
+
+  &__heading {
+    margin-top: 26px;
+    color: $grey;
+    font-size: $font-size-big-plus;
+  }
+
+  &__desc {
+    margin-top: 15px;
+  }
+
+  &__divider {
+    display: inline-block;
+    height: 16px;
+    border-right: 1px solid $light-grey;
+  }
+
+  &__author {
+    margin-left: 10px;
+  }
+
+  &__btns {
+    margin-top: 20px;
+    @include flex-with-gap(18px);
+  }
+
+  &__btns button {
+    @include reset-button;
+  }
+
+  &__bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  &__ppl-count {
+    margin-left: 10px;
+  }
+
+  &--small {
+    position: absolute;
+    top: 166px;
+    left: 227px;
+    @include flex-with-gap(10px);
+    align-items: flex-start;
+    width: 263px;
+    height: 129px;
+    padding: 18px 25px 22px 20px;
+    border-radius: 18px;
+
+    & .trip-card__desc {
+      margin-top: 0;
+    }
+
+    & .trip-card__heading {
+      margin-top: 6px;
+    }
+
+    & .trip-card__progress-block {
+      margin-top: 15px;
+      font-size: $font-size-small;
+    }
+
+    & .trip-card__procents {
+      color: $purple;
+    }
+
+    & .trip-card__progress-bar {
+      width: 156px;
+      height: 5px;
+      margin-top: 10px;
+      border-radius: 30px;
+      background-color: $white-2;
+    }
+
+    & .trip-card__progress-bar > div {
+      width: 40%;
+      height: 5px;
+      border-radius: 30px;
+      background-color: $purple;
+    }
+  }
+
+  .blured-circle {
+    position: absolute;
+    width: 354px;
+    height: 367px;
+    top: -60px;
+    left: 60px;
+    z-index: -1;
+
+    background: #59b0e657;
+    filter: blur(75px);
+  }
+}

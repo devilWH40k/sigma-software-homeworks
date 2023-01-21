@@ -11,11 +11,15 @@ $orange: #df6951;
 $yellowish-orange: #f1a501;
 $dark-blue: #181e4b;
 $darksih-blue: #14183e;
+$purple: #8a79df;
 $white: #fff;
+$white-2: #f5f5f5;
 
 //text font sizes
+$font-size-small: 14px;
 $font-size-normall: 16px;
 $font-size-big: 17px;
+$font-size-big-plus: 18px;
 
 $font-size-preheading-deafult: 18px;
 $font-size-preheading-big: 20px;
@@ -24,3 +28,17 @@ $font-size-card-heading: 20px;
 
 $font-size-heading-big: 89px;
 $font-size-heading-normal: 50px;
+
+// box-shadows
+$destination-card-light-bx-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
+$destination-card-heavy-bx-shadow: rgba(0, 0, 0, 0.26) 0px 12px 14px -3px,
+  rgba(0, 0, 0, 0.089) 0px 4px 6px -2px;
+
+$trip-card-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+  0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+  0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+  0px 20px 13px rgba(0, 0, 0, 0.01),
+  0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+  0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
