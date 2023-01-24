@@ -1,0 +1,19 @@
+.nav {
+  @media screen and (max-width: 479px) {
+    &__item-list {
+      gap: 40px;
+    }
+
+    &__item {
+      position: relative;
+      font-size: 1.125rem;
+    }
+
+    &__item::before {
+      content: "|";
+      position: absolute;
+      top: 0;
+      right: -10px;
+    }
+  }
+}

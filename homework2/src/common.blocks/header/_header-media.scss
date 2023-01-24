@@ -1,0 +1,29 @@
+.header {
+  @media screen and (max-width: 1340px) {
+    background: url("../assets/decorations/top-right-figure.svg") no-repeat top
+      right;
+    padding: 30px 30px 100px;
+
+    &__wrapper {
+      gap: 40px;
+    }
+
+    &__btn-section {
+      font-size: 1.125rem;
+    }
+
+    &__plane {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    background: none;
+  }
+
+  @media screen and (max-width: 479px) {
+    &__wrapper {
+      gap: 40px;
+    }
+  }
+}

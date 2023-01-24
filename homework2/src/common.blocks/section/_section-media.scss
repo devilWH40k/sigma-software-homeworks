@@ -1,0 +1,47 @@
+.section {
+  @media screen and (max-width: 479px) {
+    margin-top: 120px;
+
+    &--services {
+      margin-top: 0;
+      background: $white;
+    }
+
+    &--destinations {
+      padding: 0 30px;
+    }
+
+    &--bookings {
+      gap: 50px;
+      padding: 0 40px;
+    }
+
+    &--feedback {
+      padding: 0 30px;
+      gap: 80px;
+    }
+
+    &--partners {
+      padding: 0 20px;
+      justify-content: flex-start;
+
+      .partner-logo {
+        padding: 0;
+        width: 42%;
+      }
+
+      .partner-logo:hover {
+        box-shadow: none;
+      }
+
+      .partner-logo > img {
+        filter: none;
+      }
+    }
+
+    &--subscribe {
+      padding: 0 20px;
+      background: none;
+    }
+  }
+}

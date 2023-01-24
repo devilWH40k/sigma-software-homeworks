@@ -1,0 +1,12 @@
+.feedback-card {
+  @media screen and (max-width: 479px) {
+    max-width: 400px;
+    height: auto;
+    padding: 28px 34px 34px 34px;
+
+    &__avatar {
+      top: 10px;
+      left: 10px;
+    }
+  }
+}

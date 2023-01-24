@@ -14,8 +14,24 @@
 @import "../common.blocks/sub-form/sub-form";
 @import "../common.blocks/footer/footer";
 
+@import "../common.blocks/header/header-media";
+@import "../common.blocks/nav/nav-media";
+@import "../common.blocks/hero-banner/hero-banner-media";
+@import "../common.blocks/section/section-media";
+@import "../common.blocks/cards/cards-media";
+@import "../common.blocks/destination-cards/destination-cards-media";
+@import "../common.blocks/trip-card/trip-card-media";
+@import "../common.blocks/feedback-card/feedback-card-media";
+@import "../common.blocks/sub-form/sub-form-media";
+@import "../common.blocks/footer/footer-media";
+
 html {
   font-family: $font-common;
+  font-size: 16px;
+
+  @media screen and (max-width: 479px) {
+    font-size: 14px;
+  }
 }
 
 body {

@@ -5,6 +5,7 @@
 
   &__items {
     @include flex-with-gap(80px);
+    flex-flow: row wrap;
     justify-content: center;
   }
 

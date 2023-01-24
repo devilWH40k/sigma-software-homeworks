@@ -11,6 +11,7 @@
 
   &__wrapper {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     color: $grey;
@@ -49,38 +50,15 @@
     &--1 {
       top: 19%;
       left: 49%;
-      //   animation: plane-out-1 3s ease-in 0.2s forwards paused;
     }
 
     &--2 {
       top: 52%;
       left: 84%;
-      //   animation: plane-out-2 3s ease-in 0.2s forwards paused;
     }
 
     &:hover {
-      //   animation-play-state: running;
       transform: translate(70%, -500%);
     }
-  }
-}
-
-@keyframes plane-out-1 {
-  from {
-    transform: translate(0, 0);
-  }
-
-  to {
-    transform: translate(250%, -250%);
-  }
-}
-
-@keyframes plane-out-2 {
-  from {
-    transform: translate(0, 0) rotate(0deg);
-  }
-
-  to {
-    transform: translate(20%, -650%) rotate(-45deg);
   }
 }

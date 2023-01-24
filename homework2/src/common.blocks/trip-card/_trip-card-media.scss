@@ -1,0 +1,10 @@
+.trip-card {
+  @media screen and (max-width: 479px) {
+    margin-top: 40px;
+
+    &--small {
+      top: 176px;
+      left: 142px;
+    }
+  }
+}

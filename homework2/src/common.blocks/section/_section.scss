@@ -38,6 +38,7 @@
 
   &--bookings {
     @include flex-with-gap(118px);
+    flex-flow: row wrap;
     justify-content: center;
     margin-top: 186px;
     padding-left: 11%;
@@ -52,6 +53,7 @@
 
   &--feedback {
     @include flex-with-gap(125px);
+    flex-flow: row wrap;
     justify-content: center;
     margin-top: 209px;
     padding-right: 11%;
@@ -63,13 +65,14 @@
 
   &--partners {
     @include flex-with-gap(30px);
+    flex-flow: row wrap;
     justify-content: center;
     align-items: flex-start;
     margin-top: 140px;
 
     .partner-logo {
       @include grid-centering;
-      padding: 0 45px;
+      padding: 0 40px;
       height: 80px;
       border-radius: 10px;
       background-color: $white;

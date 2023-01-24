@@ -1,0 +1,27 @@
+.footer {
+  @media screen and (max-width: 479px) {
+    padding: 0 20px 79px;
+
+    &__items {
+      gap: 35px;
+    }
+
+    &__item:nth-child(1) {
+      max-width: 170px;
+      order: 1;
+      transform: none;
+    }
+
+    &__item:nth-child(2) {
+      order: 3;
+    }
+
+    &__item:nth-child(3) {
+      order: 2;
+    }
+
+    &__nav {
+      justify-content: space-between;
+    }
+  }
+}

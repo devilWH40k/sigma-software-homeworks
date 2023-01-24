@@ -1,0 +1,39 @@
+.sub-form {
+  @media screen and (max-width: 479px) {
+    width: 100%;
+    padding: 20px 46px;
+    background-size: 200px 200px;
+    background-position: -60px 120%, 110% -60px;
+
+    &__heading {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      line-height: 2.45rem;
+    }
+
+    .wrapper {
+      margin-top: 30px;
+      gap: 12px;
+    }
+
+    &__email {
+      padding: 15px 43px;
+    }
+
+    &__email + img {
+      top: 13px;
+      left: 16px;
+    }
+
+    &__btn {
+      padding: 15px 30px;
+    }
+
+    &__send-icon {
+      width: 60px;
+      height: 60px;
+      top: -2px;
+      right: 9px;
+    }
+  }
+}
