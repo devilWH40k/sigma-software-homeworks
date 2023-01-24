@@ -52,6 +52,19 @@
     img {
       width: 52px;
       height: 52px;
+      transition: transform 0.6s;
+    }
+
+    span {
+      transition: transform 0.6s;
+    }
+
+    &:hover > img {
+      transform: translateY(-8px) rotate(-360deg);
+    }
+
+    &:hover > span {
+      transform: translateY(-8px) rotate(-8deg);
     }
   }
 }

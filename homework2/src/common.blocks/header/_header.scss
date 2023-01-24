@@ -24,9 +24,15 @@
     background: transparent;
     outline: none;
     border: none;
+    transition: transform 0.4s;
 
     &:nth-child(3) img {
       margin-bottom: 2px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+      color: $orange;
     }
   }
 
@@ -54,7 +60,7 @@
 
     &:hover {
       //   animation-play-state: running;
-      transform: translate(100%, -500%);
+      transform: translate(70%, -500%);
     }
   }
 }
