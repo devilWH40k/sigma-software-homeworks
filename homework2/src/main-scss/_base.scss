@@ -5,6 +5,7 @@ $font-header: "Product Sans", sans-serif;
 $font-open-sans: "Open Sans", sans-serif;
 
 //colors
+$black: #080809;
 $grey: #212832;
 $light-grey: #5e6282;
 $orange: #df6951;
@@ -17,6 +18,7 @@ $white: #fff;
 $white-2: #f5f5f5;
 
 //text font sizes
+$font-size-tiny: 13px;
 $font-size-small: 14px;
 $font-size-normall: 16px;
 $font-size-big: 17px;
@@ -26,6 +28,9 @@ $font-size-preheading-deafult: 18px;
 $font-size-preheading-big: 20px;
 
 $font-size-card-heading: 20px;
+
+$font-size-list-heading: 21px;
+$font-size-logo-text: 44px;
 
 $font-size-heading-big: 89px;
 $font-size-heading-normal: 50px;
@@ -43,3 +48,21 @@ $card-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
   0px 20px 13px rgba(0, 0, 0, 0.01),
   0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
   0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+
+$soc-icon-bx-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+// backgrounds
+$inst-icon-background: conic-gradient(
+  from 180deg at 50% 50%,
+  #b8d2f1 0deg,
+  #f289aa 60deg,
+  #c68bf0 106.09deg,
+  #d164da 153.75deg,
+  #c963e8 221.25deg,
+  #bfc2e8 258.75deg,
+  #ffc999 288.75deg,
+  #d0d8c9 315deg,
+  #bad0f1 334.13deg,
+  #ced8cb 358.97deg,
+  rgba(255, 255, 255, 0) 360deg
+);

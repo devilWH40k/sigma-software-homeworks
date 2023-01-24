@@ -1,0 +1,101 @@
+.footer {
+  margin-top: 100px;
+  padding: 0 12% 79px 12%;
+  color: $light-grey;
+
+  &__items {
+    @include flex-with-gap(80px);
+    justify-content: center;
+  }
+
+  &__item:first-child {
+    transform: translateY(-15px);
+  }
+
+  &__logo-text {
+    color: $dark-blue;
+    font-weight: 500;
+    font-size: $font-size-logo-text;
+  }
+
+  &__logo-addition {
+    display: inline-block;
+    max-width: 210px;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: $font-size-tiny;
+  }
+
+  &__nav {
+    @include flex-with-gap(72px);
+  }
+
+  &__nav-list {
+    @include reset-list;
+  }
+
+  &__nav-list-heading {
+    color: $black;
+    font-size: $font-size-list-heading;
+  }
+
+  &__nav-item:nth-child(2) {
+    margin-top: 34px;
+  }
+
+  &__nav-item {
+    margin-top: 12px;
+    font-weight: 500;
+  }
+
+  &__soc-icons {
+    @include flex-with-gap(25px);
+  }
+
+  &__soc-icon {
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    box-shadow: $soc-icon-bx-shadow;
+    transition: transform 0.5s;
+
+    &--facebook {
+      background: $white;
+    }
+
+    &--inst {
+      background: $inst-icon-background;
+    }
+
+    &--twitter {
+      background: $white;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+    }
+  }
+
+  &__app-section {
+    margin-top: 26px;
+  }
+
+  &__app-text {
+    display: block;
+    font-weight: 500;
+    font-size: $font-size-preheading-big;
+  }
+
+  &__app-btns {
+    @include flex-with-gap(7px);
+    margin-top: 16px;
+  }
+
+  &__bottom-text {
+    display: block;
+    text-align: center;
+    margin-top: 87px;
+    font-weight: 500;
+    font-size: $font-size-small;
+  }
+}
