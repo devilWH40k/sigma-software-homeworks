@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            display: block;
+            background-color: #eee;
+            padding: 10px 12px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            border: 2px solid red;
+        }
+
+        span {
+            display: block;
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="str" id="str" cols="60" rows="5"></textarea>
+    <button>Censure</button>
+
+    <h3>Test strings:</h3>
+    <span>hi johny follow me here https://www.youtube.com/watch?v=8sosMO4YyX8 or here example@example.com see ya</span>
+    <span style="margin-top: 15px;">that is my email: yoyoyo@gmail.com</span>
+
+    <h3>Answer:</h3>
+    <span id="output"></span>
+
+    <script>
+        const textArea = document.querySelector('#str');
+        const buttonEl = document.querySelector('button');
+        const outputEl = document.querySelector('#output');
+
+        function upperCaseFirst(str) {
+            return str.charAt(0).toUpperCase() + str.substring(1);
+        }
+
+        const censure = function (str) {
+            if (typeof str !== "string") throw Error("only string input allowed");
+
+            const linkRegex =
+                /\b(?:(?:https?|ftp):\/\/)?(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/;
+            const emailRegex = /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b/;
+
+            const words = str.split(" ");
+
+            const censuredWords = words.map((word, i) => {
+                if (emailRegex.test(word)) return "[контакти заборонено]";
+                if (linkRegex.test(word)) return "[посилання заборонено]";
+                if (i !== 0) return upperCaseFirst(word);
+                return word;
+            });
+            const censuredStr = censuredWords.join(" ");
+
+            return censuredStr;
+        };
+
+        buttonEl.addEventListener('click', (e) => {
+            e.preventDefault();
+            const inputStr = textArea.value;
+            if (!inputStr) return
+            const censuredStr = censure(inputStr);
+            outputEl.innerText = censuredStr;
+            if (inputStr.length > censuredStr.length) {
+                buttonEl.disabled = true;
+                setInterval(() => {
+                    alert("Need some help, aren't u? ");
+                }, 5000)
+            }
+
+        })
+    </script>
+</body>
+
+
+</html>

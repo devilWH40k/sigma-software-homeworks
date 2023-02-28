@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            display: block;
+            background-color: #eee;
+            padding: 10px 12px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            border: 2px solid red;
+        }
+
+        span {
+            display: block;
+            max-width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="str" id="str" cols="60" rows="5"></textarea>
+    <button>Perform</button>
+
+    <h3>Answer:</h3>
+    <div id="output"></div>
+
+    <script>
+        const textArea = document.querySelector('#str');
+        const buttonEl = document.querySelector('button');
+        const outputEl = document.querySelector('#output');
+
+        const createListWords = function (str) {
+            if (typeof str !== "string") throw Error("only string input allowed");
+
+            const words = str.split(" ");
+            outputEl.innerHTML = "";
+
+            const ul = document.createElement('ul');
+            words.map((word, i) => {
+                const length = words.length;
+
+                if (i === 0) word = word.toUpperCase();
+
+                if (i === length - 1 || i === length - 2) word = word.charAt(0).toLowerCase() + word.substring(1);
+
+                return `<li>${word}</li>`
+            }).forEach(liHTML => ul.insertAdjacentHTML('beforeend', liHTML))
+
+            outputEl.insertAdjacentElement("afterbegin", ul);
+
+        };
+
+        buttonEl.addEventListener('click', (e) => {
+            e.preventDefault();
+            const inputStr = textArea.value;
+            if (!inputStr) return
+            createListWords(inputStr);
+        })
+
+        const MAX_UNACTIVE_TIME = 5 * 60 * 1000
+        let timer = setTimeout(function () {
+            if (confirm("Ви ще тут?")) {
+                clearTimeout(timer);
+            } else {
+                window.close();
+            }
+        }, MAX_UNACTIVE_TIME);
+
+        function resetTimer() {
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                if (confirm("Ви ще тут?")) {
+                    clearTimeout(timer);
+                } else {
+                    window.close();
+                }
+            }, MAX_UNACTIVE_TIME);
+        }
+
+        document.addEventListener("mousemove", resetTimer);
+        document.addEventListener("keypress", resetTimer);
+        document.addEventListener("click", resetTimer);
+        document.addEventListener("scroll", resetTimer);
+
+    </script>
+</body>
+
+
+</html>

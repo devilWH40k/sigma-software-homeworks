@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        button {
+            display: block;
+            background-color: #eee;
+            padding: 10px 12px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            border: 2px solid red;
+        }
+
+        span {
+            display: block;
+            max-width: 50%;
+        }
+
+        .no-select {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <textarea name="str" id="str" cols="60" rows="5"></textarea>
+    <button>Check parenthesis</button>
+
+    <h3>Test strings:</h3>
+    <span>(some text), (some other text)</span>
+    <span style="margin-top: 15px;">+38(097)23-23123-11(((</span>
+
+    <h3>Answer:</h3>
+    <span id="output" class="no-select"></span>
+
+    <script>
+        const textArea = document.querySelector('#str');
+        const buttonEl = document.querySelector('button');
+        const outputEl = document.querySelector('#output');
+
+        const checkParenthesis = function (str) {
+            if (typeof str !== "string") throw Error("only string input allowed");
+
+            let isValid = true;
+            let lastEntry = ")";
+
+            console.log(str);
+
+            for (const char of str) {
+                if (char !== "(" && char !== ")") continue;
+
+                if (char === "(" && lastEntry === ")") {
+                    lastEntry = "(";
+                    continue;
+                }
+
+                if (char === ")" && lastEntry === "(") {
+                    lastEntry = ")";
+                    continue;
+                }
+
+                console.log(lastEntry);
+
+                if (char === lastEntry) {
+                    isValid = false;
+                    break;
+                }
+            }
+
+            return isValid;
+        };
+
+        buttonEl.addEventListener('click', (e) => {
+            e.preventDefault();
+            const inputStr = textArea.value;
+            if (!inputStr) return
+            const isVaild = checkParenthesis(inputStr);
+            if (isVaild) {
+                outputEl.innerText = inputStr;
+                return;
+            }
+            outputEl.innerText = "";
+        })
+
+        document.addEventListener("contextmenu", function (e) {
+            e.preventDefault();
+        }, false);
+
+    </script>
+</body>
+
+
+</html>
