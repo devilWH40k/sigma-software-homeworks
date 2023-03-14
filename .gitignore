@@ -64,5 +64,22 @@ typings/
 dist/
 .parcel-cache/
 
+# Vite stuff
+node_modules
+dist
+dist-ssr
+*.local
+
 # prettier
 .prettierignore
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
