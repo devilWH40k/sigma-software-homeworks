@@ -1,0 +1,71 @@
+.slider {
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+
+  &__btns {
+    @include flex-with-gap(40px);
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 15px;
+
+    button {
+      @include reset-button;
+      font-size: 18px;
+      font-weight: $font-weight-medium;
+      padding: 4px 9px;
+      border-radius: 50%;
+      background: $white-color;
+      box-shadow: -1px 3px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.5s;
+    }
+
+    button:hover {
+      color: $white-color;
+      background-color: $primary-color;
+    }
+  }
+
+  &__slides {
+    display: inline-flex;
+    gap: 180px;
+    margin-top: 80px;
+    transform: translateX(0);
+    transition: transform 1.5s;
+  }
+
+  &__slide {
+    position: relative;
+    width: 520px;
+    padding: 40px 38px 40px 100px;
+    box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
+    border-radius: 70px 0px;
+    background: url("../assets/section/--feedback/comment-decor.svg") no-repeat
+      top 30px right 43px;
+  }
+
+  &__slide-author {
+    color: $dark-grey-color;
+    font-size: 24px;
+    font-weight: $font-weight-bold;
+  }
+
+  &__slide-comment {
+    display: block;
+    margin-top: 8px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__slide-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    img {
+      border-radius: 35px 0px;
+    }
+  }
+}

@@ -1,3 +1,35 @@
-.test {
-  color: #610e0e;
+@import "./base";
+@import "./normalize";
+@import "./mixins";
+
+@import "./preloader/preloader";
+@import "./nav/nav";
+@import "./button/button";
+@import "./progress-bar/progress-bar";
+@import "./section/section";
+@import "./cards/cards";
+@import "./graph/graph";
+@import "./slider/slider";
+@import "./sign-up-form/sign-up-form";
+@import "./sign-up-form/form-animation";
+@import "./footer/footer";
+
+:root {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: $grey-color;
+  scroll-behavior: smooth;
+  scroll-padding-top: 47px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main {
+  margin: 0 auto;
+  padding-top: 50px;
+
+  min-height: 2000px;
 }

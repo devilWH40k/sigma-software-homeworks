@@ -1,0 +1,264 @@
+.section {
+  padding: 0 15%;
+  scroll-margin-top: 100px;
+
+  &__preheading {
+    font-family: $font-family-poppins;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-preheading;
+
+    &--decorated {
+      font-size: 288px;
+      line-height: 228px;
+      background: url(../assets/section/--about-us/wood-back.png);
+      background-size: cover;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__heading {
+    font-family: $font-family-poppins;
+    font-weight: $font-weight-medium;
+    font-size: $font-size-heading;
+    color: $dark-grey-color;
+    line-height: 57px;
+
+    &--big {
+      font-size: $font-size-heading-big;
+      line-height: 78px;
+    }
+  }
+
+  &__text {
+    display: block;
+    line-height: 30px;
+  }
+
+  &__img {
+    position: relative;
+
+    &--big {
+      img {
+        border-radius: 140px 0;
+      }
+
+      &-decoration-right::after {
+        @include img-decoration(35px, 35px, 140px 0);
+      }
+
+      &-decoration-left::after {
+        @include img-decoration(-35px, -35px, 140px 0);
+      }
+    }
+
+    &--small {
+      img {
+        border-radius: 100px 0;
+      }
+
+      &-decoration-right::after {
+        @include img-decoration(18px, 18px, 100px 0);
+      }
+
+      &-decoration-left::after {
+        @include img-decoration(-18px, -18px, 100px 0);
+      }
+    }
+  }
+
+  &--modern-interior {
+    @include flex-with-gap(45px);
+    align-items: center;
+    margin-top: 120px;
+
+    .section__heading {
+      margin-top: 13px;
+    }
+
+    .section__text {
+      margin-top: 25px;
+    }
+
+    .button--primary {
+      margin-top: 40px;
+    }
+  }
+
+  &--occupation {
+    padding: 0 8% 0 15%;
+    min-height: 733px;
+    margin-top: 250px;
+
+    .btn-wrapper {
+      @include flex-with-gap(45px);
+      margin-top: 30px;
+    }
+  }
+
+  &--about-us {
+    margin-top: 200px;
+
+    .block1,
+    .block2 {
+      @include flex-with-gap(80px);
+    }
+
+    .block1 {
+      .section__heading {
+        margin-top: 59px;
+      }
+
+      .section__text {
+        margin-top: 15px;
+      }
+
+      .button--primary {
+        margin-top: 30px;
+      }
+    }
+
+    .block2 {
+      margin-top: 200px;
+
+      .wrapper {
+        @include flex-with-gap(30px);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+
+      .section__heading {
+        white-space: pre-line;
+      }
+    }
+  }
+
+  &--statistic {
+    margin-top: 250px;
+    padding: 87px;
+    text-align: center;
+    background-color: #f8f8f8;
+
+    .section__heading {
+      white-space: pre-line;
+    }
+  }
+
+  &--feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 13%;
+    padding-top: 130px;
+
+    .section__heading {
+      margin-top: 10px;
+    }
+  }
+
+  &--blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    padding-top: 90px;
+    padding-bottom: 120px;
+    scroll-margin-top: -47px;
+    background: #f8f8f8;
+
+    .articles {
+      @include flex-with-gap(160px);
+      margin-top: 80px;
+    }
+
+    .article {
+      z-index: 100;
+      transition: opacity 0.8s, transform 0.8s;
+
+      &--hidden {
+        opacity: 0;
+        transform: translateY(35px);
+      }
+
+      &__heading {
+        margin-top: 50px;
+        color: $dark-grey-color;
+        font-size: $font-size-title-big;
+        font-weight: $font-weight-semibold;
+
+        &--white {
+          color: $white-color;
+        }
+      }
+
+      &__text {
+        margin-top: 17px;
+        display: block;
+      }
+
+      .button--primary {
+        margin-top: 45px;
+      }
+
+      .section__img {
+        .wrapper {
+          position: relative;
+          border-radius: 100px 0;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.8s;
+          }
+
+          .hovered-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+            padding: 0 30px 30px;
+            color: $white-color;
+            background: linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 1) 0%,
+              rgba(255, 255, 255, 0) 52%
+            );
+            opacity: 0;
+            transition: opacity 0.8s;
+          }
+
+          &:hover img {
+            transform: scale(1.2);
+          }
+
+          &:hover .hovered-info {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  &--sign-up {
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 90px;
+    scroll-margin-top: 0;
+
+    .decoration-line {
+      width: 400px;
+      height: 2px;
+      margin: 40px 0;
+      background-color: #c4c4c4;
+    }
+  }
+}

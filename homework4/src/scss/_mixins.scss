@@ -1,0 +1,36 @@
+@mixin reset-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin reset-button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+@mixin flex-with-gap($gap) {
+  display: flex;
+  gap: $gap;
+}
+
+@mixin grid-centering {
+  display: grid;
+  place-items: center;
+}
+
+@mixin img-decoration($top, $left, $border-radius) {
+  content: "";
+  position: absolute;
+  top: $top;
+  left: $left;
+  height: 100%;
+  width: 100%;
+  border: 2px solid $secondary-color;
+  border-radius: $border-radius;
+  z-index: -1;
+}

@@ -16,8 +16,401 @@
 </head>
 
 <body>
-    <h1 class="test">Test</h1>
+    <div class="preloader-overlay">
+        <div class="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="form-animation-overlay"></div>
+    <div class="form-animation-content">
+        <h1 class="form-animation-content__heading">Congrats !!!</h1>
+        <span class="form-animation-content__text"></span>
+    </div>
+
+    <main class="main">
+        <nav class="nav">
+            <img src="./src/assets/nav/logo.svg" alt="DECKBASE logo image" class="nav__logo">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#">HOME</a></li>
+                <li class="nav__item"><a href="#modern-interior">PROJECT</a></li>
+                <li class="nav__item"><a href="#services">SERVICES</a></li>
+                <li class="nav__item"><a href="#about">ABOUT</a></li>
+                <li class="nav__item"><a href="#blog">BLOG</a></li>
+                <li class="nav__item"><a href="#">SHOP</a></li>
+                <li class="nav__item"><a href="#footer">CONTACT</a></li>
+                <a class="button button--secondary" href="#sign-up">Sign Up</a>
+            </ul>
+            <div class="progress-bar"></div>
+            <div class="progress-bar-line"></div>
+        </nav>
+
+        <section id="modern-interior" class="section section--modern-interior">
+            <div class="wrapper">
+                <span class="section__preheading">MODERN INTERIOR</span>
+                <h1 class="section__heading section__heading--big">Create Your
+                    Interior Design.</h1>
+                <span class="section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation.</span>
+                <button class="button button--primary">CONTACT</button>
+            </div>
+            <figure class="section__img section__img--big section__img--big-decoration-right">
+                <img src="./src/assets/section/--modern-interior/light-designed-room.png"
+                    alt="beautifull ligth living room design">
+            </figure>
+        </section>
+
+        <section id="services" class="section section--occupation">
+            <span class="section__preheading">WHAT WE DO</span>
+            <h1 class="section__heading">Our Service</h1>
+            <div class="btn-wrapper">
+                <button class="button button--primary button--rounded button--rounded-active"
+                    data-index="0">ALL</button>
+                <button class="button button--primary button--rounded" data-index="1">INTERIOR DESIGN</button>
+                <button class="button button--primary button--rounded" data-index="2">ARCHITECTURE</button>
+                <button class="button button--primary button--rounded" data-index="3">PLANNING</button>
+            </div>
+            <div class="cards">
+                <figure class="card card--interior">
+                    <img src="./src/assets/section/--occupation/inter-des-icon.png" alt="interior design icon">
+                    <h4 class="card__title">Interior Design1</h4>
+                    <span class="card__text">
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.
+                    </span>
+                </figure>
+                <figure class="card card--arhitecture">
+                    <img src="./src/assets/section/--occupation/arhit-icon.png" alt="architecture icon">
+                    <h4 class="card__title">Architecture 1</h4>
+                    <span class="card__text">
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.
+                    </span>
+                </figure>
+                <figure class="card card--planning">
+                    <img src="./src/assets/section/--occupation/planning-icon.png" alt="planning icon">
+                    <h4 class="card__title">Planning 1</h4>
+                    <span class="card__text">
+                        Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.
+                    </span>
+                </figure>
+            </div>
+        </section>
+
+        <section id="about" class="section section--about-us">
+            <figure class="block1">
+                <figure class="section__img section__img--big section__img--big-decoration-left">
+                    <img src="./src/assets/section/--about-us/about-us-pic.png" alt="ligth living room design">
+                </figure>
+                <div class="wrapper">
+                    <span class="section__preheading">ABOUT US</span>
+                    <h1 class="section__heading">Interioris The Will of An Epoch Mextreo</h1>
+                    <span class="section__text">
+                        There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form injected
+                        humour, or randomised words which don't look even slightly
+                        believable.If you are going to use a passage of Lorem Ipsum,
+                        sure there isn't anything embarrassing hidden the middleof text.
+                        All the Lorem Ipsum generators on the Internettend to repeat
+                        predefined chunks as necessary,making this the first true
+                        generator on the Internet.
+                    </span>
+                    <button class="button button--primary">LEARN MORE</button>
+                </div>
+            </figure>
+            <figure class="block2">
+                <div class="wrapper">
+                    <span class="section__preheading section__preheading--decorated">20</span>
+                    <h1 class="section__heading">Years Of Successful
+                        Working
+                        The Market
+                    </h1>
+                    <button class=" button button--primary">READ MORE</button>
+                </div>
+                <figure class="section__img section__img--big section__img--big-decoration-right">
+                    <img src="./src/assets/section/--about-us/about-us-pic2.png"
+                        alt="beautifull ligth living room design">
+                </figure>
+            </figure>
+        </section>
+
+        <section class="section section--statistic">
+            <h1 class="section__heading">3000+ Completed Work
+                Which WE have Successfully Done</h1>
+            <figure class="graph">
+                <div class="graph__tile">
+                    <h2 class="graph__tile-value">980</h2>
+                    <h6 class="graph__tile-title">Project</h6>
+                </div>
+                <figure class="graph__connector">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </figure>
+                <div class="graph__tile">
+                    <h2 class="graph__tile-value">520</h2>
+                    <h6 class="graph__tile-title">Happy Clients</h6>
+                </div>
+                <figure class="graph__connector">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </figure>
+                <div class="graph__tile">
+                    <h2 class="graph__tile-value">330</h2>
+                    <h6 class="graph__tile-title">Winners</h6>
+                </div>
+                <figure class="graph__connector">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </figure>
+                <div class="graph__tile">
+                    <h2 class="graph__tile-value">120</h2>
+                    <h6 class="graph__tile-title">Recoment</h6>
+                </div>
+            </figure>
+        </section>
+
+        <section class="section section--feedback">
+            <span class="section__preheading">TESTIMONIALS</span>
+            <h1 class="section__heading">Client says about us</h1>
+            <div class="slider">
+                <div class="slider__btns">
+                    <button class="slider__left-btn">&lt;</button>
+                    <button class="slider__right-btn">&gt;</button>
+                </div>
+                <div class="slider__slides">
+                    <div class="slider__slide">
+                        <span class="slider__slide-author">Louis Saville</span>
+                        <span class="slider__slide-author-position">/CEO at Google inc</span>
+                        <span class="slider__slide-comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </span>
+                        <figure class="slider__slide-img">
+                            <img src="./src/assets/section/--feedback/author1.png" alt="comment author photo">
+                        </figure>
+                    </div>
+                    <div class="slider__slide">
+                        <span class="slider__slide-author">Rekha Varadwaz</span>
+                        <span class="slider__slide-author-position">/Manager at Nike inc</span>
+                        <span class="slider__slide-comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </span>
+                        <figure class="slider__slide-img">
+                            <img src="./src/assets/section/--feedback/author2.png" alt="comment author photo">
+                        </figure>
+                    </div>
+                    <div class="slider__slide">
+                        <span class="slider__slide-author">Page2</span>
+                        <span class="slider__slide-author-position">/Manager at Nike inc</span>
+                        <span class="slider__slide-comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </span>
+                        <figure class="slider__slide-img">
+                            <img src="./src/assets/section/--feedback/author2.png" alt="comment author photo">
+                        </figure>
+                    </div>
+                    <div class="slider__slide">
+                        <span class="slider__slide-author">Page 2</span>
+                        <span class="slider__slide-author-position">/CEO at Google inc</span>
+                        <span class="slider__slide-comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </span>
+                        <figure class="slider__slide-img">
+                            <img src="./src/assets/section/--feedback/author1.png" alt="comment author photo">
+                        </figure>
+                    </div>
+                    <div class="slider__slide">
+                        <span class="slider__slide-author">Page 3</span>
+                        <span class="slider__slide-author-position">/CEO at Google inc</span>
+                        <span class="slider__slide-comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </span>
+                        <figure class="slider__slide-img">
+                            <img src="./src/assets/section/--feedback/author1.png" alt="comment author photo">
+                        </figure>
+                    </div>
+                    <div class="slider__slide">
+                        <span class="slider__slide-author">Page 3</span>
+                        <span class="slider__slide-author-position">/CEO at Google inc</span>
+                        <span class="slider__slide-comment">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </span>
+                        <figure class="slider__slide-img">
+                            <img src="./src/assets/section/--feedback/author1.png" alt="comment author photo">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" class="section section--blog">
+            <span class="section__preheading">LETEST NEWS</span>
+            <h1 class="section__heading">From Our Blog</h1>
+            <div class="articles">
+                <div class="article">
+                    <figure class="section__img section__img--small section__img--small-decoration-right">
+                        <div class="wrapper">
+                            <img src="./src/assets/section/--blog/article-pic1.png" alt="ligth living room design">
+                            <div class="hovered-info">
+                                <h1 class="article__heading article__heading--white">2020 Interior Design Trends</h1>
+                                <span class="article__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    incididunt ut labore et dolore magna aliqua.
+                                </span>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="wrapper">
+                        <h1 class="article__heading">2020 Interior Design Trends</h1>
+                        <span class="article__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            incididunt ut labore et dolore magna aliqua.
+                        </span>
+                        <button class="button button--primary">CONTINUE READING....</button>
+                    </div>
+                </div>
+                <div class="article">
+                    <figure class="section__img section__img--small section__img--small-decoration-right">
+                        <div class="wrapper">
+                            <img src="./src/assets/section/--blog/article-pic2.png" alt="ligth living room design">
+                            <div class="hovered-info">
+                                <h1 class="article__heading article__heading--white">28 Notable Product at ARC Design
+                                </h1>
+                                <span class="article__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    incididunt ut labore et dolore magna aliqua.
+                                </span>
+                            </div>
+                        </div>
+                    </figure>
+                    <div class="wrapper">
+                        <h1 class="article__heading">28 Notable Product at ARC Design</h1>
+                        <span class="article__text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            incididunt ut labore et dolore magna aliqua.
+                        </span>
+                        <button class="button button--primary">CONTINUE READING....</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sign-up" class="section section--sign-up">
+            <form class="sign-up-form">
+                <h1 class="section__heading">DON’T FORGET TO SIGN UP</h1>
+                <div class="decoration-line"></div>
+                <span class="section__text">
+                    Find out early about all upcoming promotions and new product releases with our newsletter.
+                </span>
+                <div class="sign-up-form__inputs">
+                    <div class="sign-up-form__input-wrapper">
+                        <input type="text" name="name" class="sign-up-form__input" placeholder="Enter your name..."
+                            pattern="^[A-Z][a-z]*$" required>
+                    </div>
+                    <div class="sign-up-form__input-wrapper">
+                        <input type="text" name="surname" class="sign-up-form__input"
+                            placeholder="Enter your surname..." pattern="^[A-Z][a-z]*$" required>
+                    </div>
+                </div>
+                <div class="sign-up-form__input-wrapper">
+                    <input type="email" name="email" class="sign-up-form__input" placeholder="Enter your email..."
+                        required>
+                </div>
+                <button class="button button--primary button--bottom-right-rounded">SUBSCRIBE</button>
+            </form>
+        </section>
+
+        <footer id="footer" class="footer">
+            <div class="footer__main-content">
+                <section class="footer__section">
+                    <img src="./src/assets/nav/logo.svg" alt="DECKBASE logo image" width="152" height="47"
+                        class="nav__logo">
+                    <span class="footer__logo-text">
+                        But i must explain to you all this mistaken
+                        idea of dencouncing pleasure.
+                    </span>
+                </section>
+                <section class="footer__section">
+                    <h3 class="footer__nav-header">Quick Links</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">About Our Company</li>
+                        <li class="footer__nav-item">Services WE provide</li>
+                        <li class="footer__nav-item">Career & Opportunity</li>
+                        <li class="footer__nav-item">Privacy & policy</li>
+                        <li class="footer__nav-item">Contact US</li>
+                    </ul>
+                </section>
+                <section class="footer__section">
+                    <h3 class="footer__nav-header">Company</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">About Company</li>
+                        <li class="footer__nav-item">Our Testimonials</li>
+                        <li class="footer__nav-item">Latest News</li>
+                        <li class="footer__nav-item">Our misson</li>
+                        <li class="footer__nav-item">Get a free Quot</li>
+                    </ul>
+                </section>
+                <section class="footer__section">
+                    <h3 class="footer__nav-header">Contact us</h3>
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-item">Sagrada Familia, Herba</li>
+                        <li class="footer__nav-item">Street Front USA</li>
+                        <li class="footer__nav-item">brandoxide@gmail.com</li>
+                        <li class="footer__nav-item">002-568423591</li>
+                    </ul>
+                </section>
+                <section class="footer__section">
+                    <h3 class="footer__nav-header">Follow Us</h3>
+                    <div class="footer__socmedia-icons">
+                        <a href="" class="footer__socmedia-icon">
+                            <img src="./src/assets/footer/facebook.svg" alt="social media icon">
+                        </a>
+                        <a href="" class="footer__socmedia-icon">
+                            <img src="./src/assets/footer/twitter.svg" alt="social media icon">
+                        </a>
+                        <a href="" class="footer__socmedia-icon">
+                            <img src="./src/assets/footer/instagram.svg" alt="social media icon">
+                        </a>
+                        <a href="" class="footer__socmedia-icon">
+                            <img src="./src/assets/footer/linked-in.svg" alt="social media icon">
+                        </a>
+                    </div>
+                </section>
+            </div>
+            <section class="footer__bottom-section">
+                <span class="footer__copyright">
+                    Copyright @ <span class="copyright-year"></span> <span style="color: #37806B;">Brandoxide</span>.all
+                    right reserved.
+                </span>
+            </section>
+        </footer>
+    </main>
     <script type="module" src="./src/js/main.js"></script>
+
 </body>
 
 </html>
