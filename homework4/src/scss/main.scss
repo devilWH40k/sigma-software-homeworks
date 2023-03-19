@@ -14,6 +14,8 @@
 @import "./sign-up-form/form-animation";
 @import "./footer/footer";
 
+@import "./cards/cards-media";
+
 :root {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
@@ -30,6 +32,10 @@ a {
 .main {
   margin: 0 auto;
   padding-top: 50px;
+}
 
-  min-height: 2000px;
+@media screen and (max-width: 1500px) {
+  :root {
+    font-size: 15px;
+  }
 }

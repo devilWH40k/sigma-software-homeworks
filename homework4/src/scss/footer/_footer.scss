@@ -5,6 +5,7 @@
   &__main-content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 100%;
     padding: 93px 15% 70px;
   }
