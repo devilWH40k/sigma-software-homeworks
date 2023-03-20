@@ -5,3 +5,5 @@ import "./slider/slider";
 import "./section/--blog/articleAnimation";
 import "./sign-up-form/signUpForm";
 import "./footer/footer";
+import "./userActivity";
+import "./section/--location/map";

@@ -2,6 +2,7 @@
 @import "./normalize";
 @import "./mixins";
 
+@import "./popup/popup";
 @import "./preloader/preloader";
 @import "./nav/nav";
 @import "./burger/burger";
@@ -21,6 +22,8 @@
 @import "./graph/graph-media";
 @import "./slider/slider-media";
 @import "./footer/footer-media";
+
+@import url("leaflet/dist/leaflet.css");
 
 :root {
   font-family: "Open Sans", sans-serif;
@@ -50,5 +53,11 @@ a {
 @media screen and (max-width: 1440px) {
   :root {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  :root {
+    font-size: 13px;
   }
 }

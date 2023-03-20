@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/scss/main.scss">
     <!--Fonts: Open Sans(400,600,700), Poppins(500,600)-->
@@ -16,6 +15,12 @@
 </head>
 
 <body>
+    <div class="popup">
+        <div class="popup__message">You still here buddy?</div>
+        <button class="popup__yes">Yes</button>
+        <button class="popup__no">No</button>
+    </div>
+
     <div class="preloader-overlay">
         <div class="preloader">
             <div></div>
@@ -52,7 +57,7 @@
                 <li class="nav__item"><a href="#services">SERVICES</a></li>
                 <li class="nav__item"><a href="#about">ABOUT</a></li>
                 <li class="nav__item"><a href="#blog">BLOG</a></li>
-                <li class="nav__item"><a href="#">SHOP</a></li>
+                <li class="nav__item"><a href="#location">SHOP</a></li>
                 <li class="nav__item"><a href="#footer">CONTACT</a></li>
                 <a class="button button--secondary" href="#sign-up">Sign Up</a>
             </ul>
@@ -141,6 +146,12 @@
                 <figure class="section__img section__img--big section__img--big-decoration-right">
                 </figure>
             </figure>
+        </section>
+
+        <section class="section section--location">
+            <span class="section__preheading">Location</span>
+            <h1 class="section__heading">Our main Office</h1>
+            <div id="map"></div>
         </section>
 
         <section class="section section--statistic">

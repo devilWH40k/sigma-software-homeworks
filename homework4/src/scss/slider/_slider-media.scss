@@ -5,7 +5,6 @@
     &__slides {
       width: 312%;
       gap: 3.8%;
-      //   justify-content: space-between;
     }
 
     &__slide {
@@ -31,7 +30,6 @@
     &__slides {
       width: 681%;
       gap: 4.8%;
-      //   justify-content: space-between;
     }
 
     &__slide {
@@ -40,7 +38,25 @@
   }
 }
 
-//slider
+@media screen and (max-width: 620px) {
+  .slider {
+    padding-left: 15%;
 
-// width: 610%;
-// gap: 4.8%;
+    &__slide {
+      padding: 20px 20px 20px 40px;
+      background-image: none;
+    }
+
+    &__slide-img {
+      top: 0;
+      left: 0;
+      transform: translate(-58%, 0);
+
+      img {
+        width: 75px;
+        height: auto;
+        border-radius: 28px 0px;
+      }
+    }
+  }
+}

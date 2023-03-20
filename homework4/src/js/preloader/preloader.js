@@ -20,7 +20,7 @@ const pausePromise = function (time) {
 };
 
 // If loading takes less than 5s it waits for the end of pause
-Promise.all([promisifyLoad()]).then(() => {
+Promise.all([promisifyLoad(), pausePromise(PRELOADING_MIN_TIME)]).then(() => {
   preloaderOverlayEl.style.opacity = "0";
   document.body.style.overflow = "visible";
 });

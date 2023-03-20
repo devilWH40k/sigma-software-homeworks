@@ -1,3 +1,5 @@
 export const PROGRES_BAR_DEBOUNCE_TIME = 50;
-export const PRELOADING_MIN_TIME = 2000;
+export const PRELOADING_MIN_TIME = 5 * 1000;
 export const FORM_ANIMATION_DURATION = 5000;
+export const MAX_UNACTIVE_TIME = 60 * 1000;
+export const WAITING_RESPONSE_CLOSE_TIME = 5 * 1000;
