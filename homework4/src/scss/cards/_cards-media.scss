@@ -4,3 +4,10 @@
     gap: 80px;
   }
 }
+
+@media screen and (max-width: 1439px) {
+  .cards {
+    justify-content: center;
+    gap: 50px;
+  }
+}

@@ -1,0 +1,20 @@
+@media screen and (max-width: 1650px) {
+  .footer {
+    &__section {
+      &:first-child {
+        max-width: 173px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1026px) {
+  .footer {
+    &__main-content {
+      justify-content: center;
+      padding-left: 5%;
+      padding-right: 5%;
+      gap: 20px;
+    }
+  }
+}

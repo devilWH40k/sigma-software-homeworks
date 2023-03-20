@@ -1,0 +1,46 @@
+@media screen and (max-width: 1800px) {
+  .slider {
+    padding-left: 6%;
+
+    &__slides {
+      width: 312%;
+      gap: 3.8%;
+      //   justify-content: space-between;
+    }
+
+    &__slide {
+      width: 16%;
+    }
+  }
+}
+
+@media screen and (max-width: 1628px) {
+  .slider {
+    padding-left: 7%;
+
+    &__slide-author-position {
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1356px) {
+  .slider {
+    padding-left: 22%;
+
+    &__slides {
+      width: 681%;
+      gap: 4.8%;
+      //   justify-content: space-between;
+    }
+
+    &__slide {
+      width: 12%;
+    }
+  }
+}
+
+//slider
+
+// width: 610%;
+// gap: 4.8%;

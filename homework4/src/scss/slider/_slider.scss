@@ -29,6 +29,7 @@
 
   &__slides {
     display: inline-flex;
+    align-items: flex-start;
     gap: 180px;
     margin-top: 80px;
     transform: translateX(0);
@@ -54,7 +55,7 @@
   &__slide-comment {
     display: block;
     margin-top: 8px;
-    font-size: 18px;
+    font-size: $font-size-medium;
     line-height: 28px;
   }
 

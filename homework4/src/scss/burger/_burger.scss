@@ -1,0 +1,57 @@
+#burger-toggle {
+  display: none;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40px;
+  cursor: pointer;
+
+  &__lines,
+  &__lines::before,
+  &__lines::after {
+    display: block;
+    background-color: $primary-color;
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+
+  &__lines::before {
+    content: "";
+    margin-top: -9px;
+  }
+
+  &__lines::after {
+    content: "";
+    margin-top: 9px;
+  }
+
+  #burger-toggle:checked + & &__lines::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+
+  #burger-toggle:checked + & &__lines {
+    background: rgba(255, 255, 255, 0);
+  }
+
+  #burger-toggle:checked + & &__lines::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+}
+
+//temp
+
+@media screen and (max-width: 919px) {
+  .burger {
+    display: flex;
+  }
+}

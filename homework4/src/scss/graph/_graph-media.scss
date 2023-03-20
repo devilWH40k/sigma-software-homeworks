@@ -1,0 +1,31 @@
+$tile-media-width: 14.3%;
+
+@media screen and (max-width: 1439px) {
+  .graph {
+    &__tile {
+      width: $tile-media-width;
+      height: 50%;
+    }
+
+    &__connector {
+      width: $tile-media-width;
+      height: 30%;
+
+      .line {
+        background-color: $line-color;
+      }
+
+      .line:first-child {
+        width: 50%;
+      }
+
+      .line:nth-child(2) {
+        height: 100%;
+      }
+
+      .line:last-child {
+        width: 50%;
+      }
+    }
+  }
+}

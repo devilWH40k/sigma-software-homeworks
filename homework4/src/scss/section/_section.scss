@@ -45,9 +45,7 @@
     }
 
     &--big {
-      img {
-        border-radius: 140px 0;
-      }
+      border-radius: 140px 0;
 
       &-decoration-right::after {
         @include img-decoration(35px, 35px, 140px 0);
@@ -78,6 +76,12 @@
     align-items: center;
     margin-top: 120px;
 
+    .section__img {
+      height: 614px;
+      width: 50%;
+      background-image: url("../assets/section/--modern-interior/light-designed-room.png");
+    }
+
     .wrapper {
       max-width: 52%;
     }
@@ -102,6 +106,7 @@
 
     .btn-wrapper {
       @include flex-with-gap(45px);
+      flex-wrap: wrap;
       margin-top: 30px;
     }
   }
@@ -112,6 +117,7 @@
     .section__img {
       align-self: flex-start;
       width: 50%;
+      height: 711px;
     }
 
     .block1,
@@ -120,6 +126,10 @@
     }
 
     .block1 {
+      .section__img {
+        background-image: url("../assets/section/--about-us/about-us-pic.png");
+      }
+
       .wrapper {
         width: 50%;
       }
@@ -139,6 +149,10 @@
 
     .block2 {
       margin-top: 200px;
+
+      .section__img {
+        background-image: url("../assets/section/--about-us/about-us-pic2.png");
+      }
 
       .wrapper {
         @include flex-with-gap(30px);

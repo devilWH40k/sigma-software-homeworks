@@ -7,7 +7,9 @@
   font-weight: $font-weight-semibold;
   background-color: $white-color;
   z-index: 1000;
+  padding-bottom: 5px;
   width: 70%;
+  height: 52px;
   margin: 0 auto;
 
   &__list {
