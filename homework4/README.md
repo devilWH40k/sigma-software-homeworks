@@ -40,6 +40,8 @@ $ npm run build
 
 Preloading of the page lasts minimum 5s, to check "user unactive" behaviour you should waste the whole minute, if you in a hurry just have a look at **src/js/config.js** file to make some changes.
 
+To check the task with greeting from the sign up form u should write "Vovan" as a name input xD
+
 P.S. I didn't manage to do page closing task after user being unactive for 1m, so when popup window shows you can just check the console for a warning message (after 5sec with no activity), ofc if user hits the "Yes" button within given time warning won't show up.
 
 [vite]: https://vitejs.dev
